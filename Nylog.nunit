@@ -2,5 +2,6 @@
   <Settings activeconfig="Release"/>
   <Config name="Release" binpathtype="Auto">
     <assembly path="tests\Nylog.Tests\bin\Release\Tests.Core.dll" />
+    <assembly path="tests\Nylog.NLog.Tests\bin\Release\Tests.NLog.dll" />
   </Config>
 </NUnitProject>
