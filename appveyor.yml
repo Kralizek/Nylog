@@ -22,7 +22,7 @@ environment:
   COVERALLS_REPO_TOKEN:
     secure: +S2LfTMLn0DGCZQ+QYIQS7Q3tVCPI7mnX8jOHEBTPDAROwLf8v91zXJU6l2Ii9ue
 test:
-  assemblies: '**\*.Tests.dll'
+  assemblies: 'tests\**\*.Tests.dll'
 artifacts:
 - path: report.zip
 after_test: 
