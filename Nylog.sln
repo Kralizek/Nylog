@@ -3,8 +3,40 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{D5D0C159-E78C-46F7-A037-186D6B5FFFA4}"
+	ProjectSection(SolutionItems) = preProject
+		AUTHORS.txt = AUTHORS.txt
+		LICENSE = LICENSE
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{79665FF9-BAD0-4B61-B73E-108138B2EC33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F6502FC2-F3B3-468B-9D43-85D27642B2FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nylog", "src\Nylog\Nylog.csproj", "{E1AC9402-F215-46EE-AC17-367DF58586AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nylog.Tests", "tests\Nylog.Tests\Nylog.Tests.csproj", "{1B9C1F79-84C0-4975-9CE6-054B4FFB0CB1}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1AC9402-F215-46EE-AC17-367DF58586AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1AC9402-F215-46EE-AC17-367DF58586AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1AC9402-F215-46EE-AC17-367DF58586AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1AC9402-F215-46EE-AC17-367DF58586AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B9C1F79-84C0-4975-9CE6-054B4FFB0CB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B9C1F79-84C0-4975-9CE6-054B4FFB0CB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B9C1F79-84C0-4975-9CE6-054B4FFB0CB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B9C1F79-84C0-4975-9CE6-054B4FFB0CB1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E1AC9402-F215-46EE-AC17-367DF58586AA} = {79665FF9-BAD0-4B61-B73E-108138B2EC33}
+		{1B9C1F79-84C0-4975-9CE6-054B4FFB0CB1} = {F6502FC2-F3B3-468B-9D43-85D27642B2FF}
 	EndGlobalSection
 EndGlobal

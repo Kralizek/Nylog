@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Nylog</id>
+    <version>$version$</version>
+    <title>Nylog</title>
+    <authors>Renato Golia</authors>
+    <owners>Renato Golia</owners>
+    <licenseUrl>https://raw.githubusercontent.com/Kralizek/Nylog/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Kralizek/Nylog</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Nylog offers a very thin logging layer to be added to every layer of your application. In your starting assembly, let any provider taking care of the actual logging.</description>
+    <language>en-US</language>
+  </metadata>
+</package>
