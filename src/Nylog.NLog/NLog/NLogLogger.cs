@@ -22,7 +22,7 @@ namespace Nylog.NLog
         
         public void Log(LogLevel level, IDictionary<string, object> state, Exception exception)
         {
-            var nlogLogLevel = LogLevels[level];
+            var nlogLogLevel = GetLogLevel(level);
 
             string message = null;
 
@@ -64,7 +64,19 @@ namespace Nylog.NLog
 
         public bool IsEnabled(LogLevel level)
         {
-            return _logger.IsEnabled(LogLevels[level]);
+            return _logger.IsEnabled(GetLogLevel(level));
+        }
+
+        private NLogLogLevel GetLogLevel(LogLevel level)
+        {
+            NLogLogLevel result;
+
+            if (!LogLevels.TryGetValue(level, out result))
+            {
+                result = NLogLogLevel.Debug;
+            }
+
+            return result;
         }
 
         private static readonly IReadOnlyDictionary<LogLevel, NLogLogLevel> LogLevels = new Dictionary<LogLevel, NLogLogLevel>

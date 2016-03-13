@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nylog.Tests", "tests\Nylog.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nylog.NLog", "src\Nylog.NLog\Nylog.NLog.csproj", "{82C3FADE-B15D-4AB6-BC6E-4DF12D391721}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nylog.NLog.Tests", "tests\Nylog.NLog.Tests\Nylog.NLog.Tests.csproj", "{6AA6D889-94C9-411D-BABC-6D3C22BA43B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{82C3FADE-B15D-4AB6-BC6E-4DF12D391721}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82C3FADE-B15D-4AB6-BC6E-4DF12D391721}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82C3FADE-B15D-4AB6-BC6E-4DF12D391721}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AA6D889-94C9-411D-BABC-6D3C22BA43B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AA6D889-94C9-411D-BABC-6D3C22BA43B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AA6D889-94C9-411D-BABC-6D3C22BA43B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AA6D889-94C9-411D-BABC-6D3C22BA43B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,5 +55,6 @@ Global
 		{E1AC9402-F215-46EE-AC17-367DF58586AA} = {79665FF9-BAD0-4B61-B73E-108138B2EC33}
 		{1B9C1F79-84C0-4975-9CE6-054B4FFB0CB1} = {F6502FC2-F3B3-468B-9D43-85D27642B2FF}
 		{82C3FADE-B15D-4AB6-BC6E-4DF12D391721} = {79665FF9-BAD0-4B61-B73E-108138B2EC33}
+		{6AA6D889-94C9-411D-BABC-6D3C22BA43B1} = {F6502FC2-F3B3-468B-9D43-85D27642B2FF}
 	EndGlobalSection
 EndGlobal
