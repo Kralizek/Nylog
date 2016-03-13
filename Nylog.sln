@@ -8,6 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{
 		appveyor.yml = appveyor.yml
 		AUTHORS.txt = AUTHORS.txt
 		LICENSE = LICENSE
+		nuget.config = nuget.config
 		packages.config = packages.config
 	EndProjectSection
 EndProject
