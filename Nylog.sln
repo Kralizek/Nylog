@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nylog", "src\Nylog\Nylog.cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nylog.Tests", "tests\Nylog.Tests\Nylog.Tests.csproj", "{1B9C1F79-84C0-4975-9CE6-054B4FFB0CB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nylog.NLog", "Nylog.NLog\Nylog.NLog.csproj", "{82C3FADE-B15D-4AB6-BC6E-4DF12D391721}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nylog.NLog", "src\Nylog.NLog\Nylog.NLog.csproj", "{82C3FADE-B15D-4AB6-BC6E-4DF12D391721}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
