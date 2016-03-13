@@ -1,0 +1,33 @@
+version: 0.1.0.{build}
+branches:
+  only:
+  - master
+configuration: Release
+platform: Any CPU
+assembly_info:
+  patch: true
+  file: '**\AssemblyInfo.*'
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}'
+before_build:
+- nuget restore Nylog.sln
+- nuget restore packages.config
+build:
+  project: Nylog.sln
+  publish_nuget: true
+  include_nuget_references: true
+  verbosity: minimal
+environment:
+  COVERALLS_REPO_TOKEN:
+    secure: +S2LfTMLn0DGCZQ+QYIQS7Q3tVCPI7mnX8jOHEBTPDAROwLf8v91zXJU6l2Ii9ue
+test:
+  assemblies: '**\*.Tests.dll'
+artifacts:
+- path: report.zip
+after_test: 
+    - packages\OpenCover.4.6.166\tools\OpenCover.Console.exe -register:user -filter:"+[Nylog.*]*" -target:".\packages\NUnit.Runners.3.2.0\tools\nunit-console.exe" -targetargs:"/process:multiple /noshadow /domain:multiple Nylog.nunit" -output:coverage.xml
+    - packages\coveralls.io.1.3.4\tools\coveralls.net.exe --opencover coverage.xml
+    - packages\ReportGenerator.2.3.1.0\tools\ReportGenerator.exe -reports:coverage.xml -targetdir:Reports
+    - 7z a report.zip Reports
+

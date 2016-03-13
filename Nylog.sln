@@ -5,8 +5,10 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution", ".solution", "{D5D0C159-E78C-46F7-A037-186D6B5FFFA4}"
 	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
 		AUTHORS.txt = AUTHORS.txt
 		LICENSE = LICENSE
+		packages.config = packages.config
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{79665FF9-BAD0-4B61-B73E-108138B2EC33}"
